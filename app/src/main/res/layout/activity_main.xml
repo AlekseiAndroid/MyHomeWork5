@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.homework5.afor.myhomework5.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:paddingTop="20sp"
+        android:paddingLeft="15sp"
+        android:id="@+id/cosa"
+        android:text="La Cosa Nostra"
+        android:textSize="26sp"
+        android:textColor="#000000"/>
+
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10sp"
+    android:layout_below="@id/cosa"
+    android:paddingTop="14sp"
+        android:id="@+id/lmap">
+
+    <ImageView
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        app:srcCompat="@drawable/map"
+        android:id="@+id/imageView2"
+        android:layout_weight="0"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="5sp"/>
+
+    <TextView
+        android:text="м. Черкаси, бул. Шевченка, 108"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/map"
+        android:layout_weight="0"
+        android:clickable="true"
+        android:paddingLeft="4sp"
+        android:textColor="#4169E1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/io"
+        android:layout_weight="1" />
+</LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10sp"
+        android:layout_below="@id/lmap"
+        android:paddingTop="8sp"
+        android:id="@+id/lsite"
+        >
+
+        <ImageView
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            app:srcCompat="@drawable/site"
+            android:id="@+id/imageView3"
+            android:layout_weight="0"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="5sp"/>
+
+        <TextView
+            android:text="https://www.lacosanostra.ck.ua"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/site"
+            android:layout_weight="0"
+            android:clickable="true"
+            android:paddingLeft="4sp"
+            android:textColor="#4169E1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ia"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <TextView
+        android:text="Тел: 0976287171"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lsite"
+        android:layout_alignParentStart="true"
+        android:paddingTop="8sp"
+        android:paddingLeft="20sp"
+        android:id="@+id/tel"
+        android:textSize="18sp"
+        android:clickable="true"
+        android:textColor="#4169E1"/>
+
+
+
+    <TextView
+        android:text="  На сьогоднішній день найулюбленішою, поширеною їжею для нас стала піца. Купити в Черкасах піцу за відмінною ціною пропонує піцерія «La Cosa Nostra»."
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tel"
+        android:layout_alignStart="@+id/tel"
+        android:paddingTop="17sp"
+        android:paddingLeft="14sp"
+        android:id="@+id/about"
+        android:textSize="18sp"
+        android:textColor="#4F4F4F"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/background1"
+        android:id="@+id/imageView"
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart"
+        android:layout_alignParentTop="true" />
+
+
+</RelativeLayout>
